@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0 auto;
+}
+
+body {
+    background-image: url(https://i.pinimg.com/564x/99/f2/32/99f232fae168a35ec53bce82a52edf78.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    margin: 0px;
+    padding: 2px;
+}
+
+.container-fluid {
+    margin-top: 3%;
+    margin-left: 6%;
+}
+
+.gradient-navbar {
+    background-image: linear-gradient(#ce138000, #f142e200, #8117d800);
+}
+
+.navbar-title a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    margin-top: 5%;
+    margin-left: 2%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.gradient-text {
+    background-color: #c92289;
+    background-image: linear-gradient(90deg, #d30a5e, #c92289, #a826c2);
+    background-size: 100%;
+    background-repeat: repeat;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+ul {
+    margin-right: 4.5%;
+    margin-top: 2%;
+}
+
+li {
+    padding-right: 30px;
+    padding-bottom: 5%;
+}
+
+li a {
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+}
+
+li a:after {
+    content: "";
+    position: absolute;
+    background-color: #c92289;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+li .active {
+    color: #a826c2;
+}
+
+li .active:after {
+    content: "";
+    position: absolute;
+    background-color: #c92289;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+li a:hover {
+    color: #d30a5e;
+}
+
+li a:hover:after {
+    width: 100%;
+}
+
+.title {
+    margin: 0;
+    width: 100%;
+    font-size: 4rem;
+    text-align: justify;
+}
+
+.row {
+    margin: 0;
+    padding: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 2%px;
+}
+
+.col-md-6 {
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 1000px;
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+
+    border-radius: 1rem;
+    border: 1px solid transparent;
+
+    backdrop-filter: blur(1rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+
+    border-top-color: rgba(225, 225, 225, 0.5);
+    border-left-color: rgba(225, 225, 225, 0.5);
+    border-bottom-color: rgba(225, 225, 225, 0.1);
+    border-right-color: rgba(225, 225, 225, 0.1);
+}
+
+.card img {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+}
+
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.cb1,
+.cb2 {
+    background: linear-gradient(to right bottom, #d30a5e, #c92289, #a826c2);
+}
+
+.btn {
+    color: white;
+    border-color: white;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.btn:hover {
+    border-color: #a826c2;
+    background-color: #d270e6;
+    box-shadow: 0 0.3rem 1rem #2c2c30d3;
+    transition: ease 0.3s;
+}
+
+@media only screen and (max-width: 990px) {
+
+    .container-fluid {
+        margin-right: 21%;
+    }
+
+    .navbar-collapse ul {
+        margin-top: 6%;
+        margin-left: 30%;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+
+    .navbar-brand {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-title a {
+        margin-top: 3%;
+    }
+
+    .container-fluid {
+        margin-right: 8%;
+    }
+
+    .navbar-collapse ul {
+        margin-top: 6%;
+        margin-left: 25%;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+
+    .navbar-brand {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-title a {
+        margin-top: 3%;
+    }
+
+    .container-fluid {
+        margin-right: 16%;
+    }
+
+    .navbar-collapse ul {
+        margin-top: 6%;
+        margin-left: 25%;
+    }
+
+}
+
+@media only screen and (max-width: 380px) {
+
+    .navbar-brand {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-title a {
+        margin-top: 3%;
+    }
+
+    .container-fluid {
+        margin-right: 10%;
+    }
+
+    .navbar-collapse ul {
+        margin-top: 6%;
+        margin-left: 25%;
+    }
+
+}
